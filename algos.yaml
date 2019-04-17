@@ -8,6 +8,14 @@ float:
       run-groups:
         base:
           args: [[10, 50, 100, 200, 1000, 2000]]
+    lopq:
+      disabled: True
+      docker-tag: ann_benchmarks-lopq
+      module: ann_benchmarks.algorithms.lopq
+      constructor: lopq
+      run-groups:
+        base:
+          args: [[10, 50, 100, 200, 1000, 2000]]  # TODO: double check this.
     faiss-lsh:
       disabled: true
       docker-tag: ann-benchmarks-faiss
