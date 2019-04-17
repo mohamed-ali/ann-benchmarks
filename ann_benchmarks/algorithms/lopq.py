@@ -2,6 +2,7 @@
 Implements the necessary adapters to integrate LOPQ in the set
 of benchmarked algorithms.
 """
+from __future__ import absolute_import
 import lopq
 from ann_benchmarks.algorithms.base import BaseANN
 

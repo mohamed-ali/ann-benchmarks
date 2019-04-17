@@ -2,7 +2,7 @@ FROM ann-benchmarks
 
 RUN apt-get python-numpy python-pip
 RUN git clone https://github.com/yahoo/lopq.git
-RUN pip install lopq/python
+RUN cd lopq/python && pip install .
 
 # lopq doesn't support python3 for now.
 RUN python -c 'import lopq'
