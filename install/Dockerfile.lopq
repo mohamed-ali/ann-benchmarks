@@ -1,6 +1,6 @@
 FROM ann-benchmarks
 
-RUN apt-get python-numpy python-pip
+RUN apt-get install -y python-numpy python-pip
 RUN git clone https://github.com/yahoo/lopq.git
 RUN cd lopq/python && pip install .
 
